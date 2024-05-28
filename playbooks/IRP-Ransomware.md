@@ -1,29 +1,23 @@
-# Incident Response Playbook Template
+# Incident Response Playbook
 
 ### Incident Type
 Ransomware
 
 ### Introduction
 
-
-This playbook is provided as a template to customers using AWS products and who are building their incident response capability.  You should customize this template to suit your particular needs, risks, available tools and work processes.
-
-Security and Compliance is a shared responsibility between you and AWS. AWS is responsible for “Security of the Cloud”, while you are responsible for “Security in the Cloud”. For more information on the shared responsibility model, [please review our documentation](https://aws.amazon.com/compliance/shared-responsibility-model/).
-
-You are responsible for making your own independent assessment of the information in this document. This document: (a) is for informational purposes only, (b) references current AWS product offerings and practices, which are subject to change without notice, and (c) does not create any commitments or assurances from AWS and its affiliates, suppliers or licensors. This document is provided “as is” without warranties, representations, or conditions of any kind, whether express or implied. The responsibilities and liabilities of AWS to its customers are controlled by AWS agreements, and this document is not part of, nor does it modify, any agreement between AWS and its customers.
-
+When it comes to ransomware, it’s only a matter of time before your organization is impacted. Is your data truly protected?
+As sophisticated and broad-reaching cybersecurity threats continue to surge, today’s organizations need a more proactive approach of identifying risks and defending data, sooner – a data security solution that doesn’t sit idle in the background, bracing for impact, but one that that meets threats head-on and picks up where conventional security tools leave off.
+ 
 ## Summary
 
 ### This Playbook
 
-This playbook outlines response steps for handling ransomware incidents.  These steps are based on the [NIST Computer Security Incident Handling Guide](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf) (Special Publication 800-61 Revision 2) that can be used to:
+In this playbook, you’ll discover the outlines response steps for handling ransomware incidents.  These steps are based on the [NIST Computer Security Incident Handling Guide](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf) (Special Publication 800-61 Revision 2) that can be used to:
 
 •	Gather evidence
 •	Contain and then eradicate the incident
 •	recover from the incident
 •	Conduct post-incident activities, including post-mortem and feedback processes
-
-Interested readers may also refer to the [AWS Security Incident Response Guide]( https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/welcome.html) which contains additional resources.  
 
 Once you have customized this playbook to meet your needs, it is important that you test the playbook (e.g., Game Days) and any automation (functional tests), update as necessary to achieve the desired results, and then publish to your knowledge management system and train all responders.
 
@@ -35,7 +29,7 @@ The next section will provide a summary of this incident type, and then cover th
 
 ## This Incident Type
 
-Ransomware is malicious code designed by threat actors to gain unauthorized access to systems and data and to encrypt the data to block access by legitimate users. Once ransomware has locked users out of their systems and/or encrypted their sensitive data, the actors demand a ransom. In theory, if the ransom is paid, access to the data is returned (such as by providing an encryption key), but equally, some studies have suggested the victim will subsequently be attacked again. Alternatively, if not paid, the organization risks permanent data loss and/or data leaks to the public, competitors or other malicious actors.
+Ransomware as we said prevouisly, is malicious code designed by threat actors to gain unauthorized access to systems and data and to encrypt the data to block access by legitimate users. Once ransomware has locked users out of their systems and/or encrypted their sensitive data, the actors demand a ransom. In theory, if the ransom is paid, access to the data is returned (such as by providing an encryption key), but equally, some studies have suggested the victim will subsequently be attacked again. Alternatively, if not paid, the organization risks permanent data loss and/or data leaks to the public, competitors or other malicious actors.
 
 There are usually limited options to mitigate a successful ransomware attack once it has occurred.  The best mitigation is to reduce the chance that it can happen in the first place. The AWS Well-Architected security pillar provides a framework to implement AWS best practice, including operating workloads security (security foundations section), protecting compute resources (infrastructure protection section) and others. The security pillar encompasses the ability to protect data, systems, and assets to take advantage of cloud technologies to improve your security. This playbook covers steps that can be used to deal with ransomware.
 ## Incident Response Process
